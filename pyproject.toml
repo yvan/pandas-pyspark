@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pandas-to-distributed"
+version = "0.1.0"
+description = ""
+authors = ["yvan"]
+readme = "README.md"
+packages = [{include = "pandas_to_distributed"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+apache-beam = {extras = ["interactive"], version = "^2.45.0"}
+pyspark = "^3.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
